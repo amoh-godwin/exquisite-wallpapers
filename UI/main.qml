@@ -9,7 +9,13 @@ ApplicationWindow {
     height: 180
     x: Screen.width - width - 115//112
     y: Screen.height - height - 60
-    color: "dodgerblue"
+    color: "transparent"
 
     flags: Qt.FramelessWindowHint | Qt.Window
+
+    Rectangle {
+        anchors.fill: parent
+        color: "dodgerblue"
+        radius: 4
+    }
 }
