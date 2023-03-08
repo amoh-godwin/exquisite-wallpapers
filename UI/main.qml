@@ -13,6 +13,9 @@ ApplicationWindow {
 
     flags: Qt.FramelessWindowHint | Qt.Window
 
+    // Theme properties
+    property url curr_theme_photo_thumbnail: ""
+
     Rectangle {
         id: outer_cont
         anchors.fill: parent
@@ -59,6 +62,15 @@ ApplicationWindow {
                                 width: 60
                                 height: 60
                                 radius: 4
+
+                                Image {
+                                    sourceSize: Qt.size(parent.width, parent.height)
+                                    width: parent.width
+                                    height: parent.height
+                                    fillMode: Image.Stretch
+                                    source: curr_theme_photo_thumbnail
+                                }
+
                             }
 
                             Rectangle {
