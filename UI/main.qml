@@ -32,7 +32,27 @@ ApplicationWindow {
             Rectangle {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
-                color: "gold"
+                color: "black"
+
+                ColumnLayout {
+                    anchors.fill: parent
+                    anchors.margins: 12
+                    anchors.topMargin: 0
+                    spacing: 12
+
+                    Text {
+                        text: "WALLPAPER"
+                        color: "lightgrey"
+                        font.pixelSize: 13
+                    }
+
+                    Rectangle {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                    }
+
+                }
+
             }
 
             Rectangle {
