@@ -70,16 +70,19 @@ ApplicationWindow {
                                     anchors.fill: parent
 
                                     Text {
+                                        Layout.fillWidth: true
                                         id: photo_description
                                         wrapMode: Text.WordWrap
                                         text: "Icelandic horses standing in a field, Iceland"
+                                        font.pixelSize: 13
+                                        font.bold: true
                                         color: "white"
                                     }
 
                                     Text {
                                         id: copyright_text
                                         text: "@ Rodrigo Luzeini/Shutterstock"
-                                        color: "lightgrey"
+                                        color: "darkgrey"
                                     }
 
                                 }
