@@ -18,5 +18,30 @@ ApplicationWindow {
         anchors.fill: parent
         color: "dodgerblue"
         radius: 4
+
+        ColumnLayout {
+            anchors.fill: parent
+            spacing: 0
+
+            Rectangle {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 36
+                color: "black"
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                color: "gold"
+            }
+
+            Rectangle {
+                Layout.fillWidth: true
+                Layout.preferredHeight: 40
+                color: "darkgrey"
+            }
+
+        }
+
     }
 }
