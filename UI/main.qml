@@ -1,6 +1,7 @@
 import QtQuick
 import QtQuick.Controls.Basic
 import QtQuick.Layouts
+import "./customs" as Cust
 
 
 ApplicationWindow {
@@ -113,6 +114,27 @@ ApplicationWindow {
                 Layout.fillWidth: true
                 Layout.preferredHeight: 40
                 color: "darkgrey"
+
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.margins: 6
+
+                    Cust.QuickLaunchMenuBtn {
+                        text: "Previous"
+                    }
+
+                    Rectangle {
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        color: "transparent"
+                    }
+
+                    Cust.QuickLaunchMenuBtn {
+                        text: "Next"
+                    }
+
+                }
+
             }
 
         }
