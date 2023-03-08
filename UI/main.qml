@@ -14,6 +14,7 @@ ApplicationWindow {
     flags: Qt.FramelessWindowHint | Qt.Window
 
     Rectangle {
+        id: outer_cont
         anchors.fill: parent
         color: "dodgerblue"
         radius: 4
